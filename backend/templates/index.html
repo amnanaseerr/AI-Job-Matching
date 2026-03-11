@@ -3,62 +3,177 @@
 
 <head>
 <meta charset="UTF-8">
-<title>NexHire AI Job Matcher</title>
+<title>AI Job Matcher</title>
 <style>
 body {
     font-family: 'Segoe UI', sans-serif;
     margin: 0;
     padding: 0;
-    background: linear-gradient(135deg,#32383e,#7e8f90);
+    background: linear-gradient(135deg, #2c3e50, #3498db); /* Dark blue gradient */
     min-height: 100vh;
 }
 
 .container {
-    width: 90%;
-    max-width: 900px;
+    width: 95%;
+    max-width: 1200px;
     margin: auto;
     margin-top: 40px;
-    background: rgb(170, 165, 165);
+    background: rgba(255, 255, 255, 0.95); /* Semi-transparent white */
     padding: 30px;
     border-radius: 12px;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(5px);
 }
 
-h1 { text-align: center; color: #4a3e12; }
+h1 { 
+    text-align: center; 
+    color: #2c3e50; /* Dark blue */
+    font-weight: 600;
+    margin-bottom: 30px;
+}
 
-.upload-box { text-align: center; margin-bottom: 30px; }
+.upload-box { 
+    text-align: center; 
+    margin-bottom: 30px; 
+}
+
+input[type="file"] {
+    padding: 10px;
+    border: 2px dashed #3498db;
+    border-radius: 6px;
+    background: #f8f9fa;
+    width: 300px;
+    margin-bottom: 15px;
+}
 
 button {
-    background: #94948b;
-    color: rgb(35, 23, 36);
+    background: #3498db; /* Light blue */
+    color: white;
     border: none;
-    padding: 12px 25px;
+    padding: 12px 30px;
     font-size: 16px;
     border-radius: 6px;
     cursor: pointer;
+    font-weight: 600;
+    transition: all 0.3s ease;
 }
-button:hover { background: #6c4242; }
+button:hover { 
+    background: #2980b9; /* Darker blue */
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(52, 152, 219, 0.4);
+}
 
-table { width: 100%; border-collapse: collapse; margin-top: 20px; }
-th { background: #706f62; color: rgb(3, 18, 12); padding: 12px; }
-td { padding: 10px; border-bottom: 1px solid #654545; }
-tr:hover { background: #6c4242; }
+table { 
+    width: 100%; 
+    border-collapse: collapse; 
+    margin-top: 20px; 
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
 
+th { 
+    background: #34495e; /* Dark blue-gray */
+    color: white; 
+    padding: 15px 12px; 
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+}
+
+td { 
+    padding: 12px; 
+    border-bottom: 1px solid #e0e0e0;
+    background: white;
+}
+
+tr:hover td { 
+    background: #f5f9ff; /* Very light blue */
+}
+
+/* Progress bar container */
 .progress {
-    background: #ffffff;  /* white background */
-    border-radius: 10px;
+    background: #ecf0f1; /* Light gray */
+    border-radius: 20px;
     overflow: hidden;
     height: 25px;
+    width: 120px;
+    box-shadow: inset 0 1px 3px rgba(0,0,0,0.1);
 }
 
+/* Progress bar fill - SINGLE COLOR */
 .progress-bar {
     height: 25px;
-    background: #7f6161;  /* maroon bar */
+    background: #3498db; /* Light blue - single color */
     display: flex;
-    justify-content: center; /* center horizontally */
-    align-items: center;     /* center vertically */
-    color: #000000;          /* black text */
+    justify-content: center;
+    align-items: center;
+    color: white;
     font-weight: bold;
+    font-size: 12px;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.2);
+    transition: width 0.5s ease;
+}
+
+/* Matching skills styling */
+.skill-match {
+    font-size: 12px;
+    color: #27ae60; /* Green for matched skills */
+    font-weight: 600;
+    background: #e8f8f5;
+    padding: 3px 8px;
+    border-radius: 15px;
+    display: inline-block;
+}
+
+.no-match {
+    color: #7f8c8d;
+    font-style: italic;
+    font-size: 12px;
+}
+
+/* Row highlighting based on match score */
+.high-match-row {
+    background: linear-gradient(90deg, rgba(52, 152, 219, 0.1), transparent);
+}
+
+.medium-match-row {
+    background: linear-gradient(90deg, rgba(241, 196, 15, 0.1), transparent);
+}
+
+.low-match-row {
+    background: linear-gradient(90deg, rgba(231, 76, 60, 0.1), transparent);
+}
+
+/* Skills column */
+.skills-required {
+    color: #34495e;
+    font-size: 13px;
+}
+
+/* Location badge */
+.location-badge {
+    background: #ecf0f1;
+    padding: 4px 8px;
+    border-radius: 15px;
+    font-size: 12px;
+    color: #2c3e50;
+    display: inline-block;
+}
+
+/* Job title */
+.job-title {
+    font-weight: 600;
+    color: #2c3e50;
+}
+
+/* Footer/Status */
+.footer-note {
+    text-align: center;
+    margin-top: 20px;
+    color: #7f8c8d;
+    font-size: 12px;
 }
 </style>
 </head>
@@ -66,53 +181,93 @@ tr:hover { background: #6c4242; }
 <body>
 
 <div class="container">
-<h1>NexHire AI Job Matcher</h1>
+<h1> AI Job Matcher</h1>
 
 <div class="upload-box">
 <form id="resumeForm">
-<input type="file" id="resume" required><br><br>
+<input type="file" id="resume" accept=".txt,.pdf,.doc,.docx" required><br>
 <button type="submit">Find Matching Jobs</button>
 </form>
 </div>
 
-<h2>Top Recommended Jobs</h2>
+<h2 style="color: #2c3e50; margin-bottom: 15px;">Top Recommended Jobs</h2>
 <table id="jobsTable">
 <thead>
 <tr>
 <th>Job Title</th>
 <th>Skills Required</th>
+<th>Your Matched Skills</th>
 <th>Location</th>
 <th>Match Score</th>
 </tr>
 </thead>
 <tbody></tbody>
 </table>
+<div class="footer-note">
+    Showing jobs sorted by match percentage • Based on your resume skills
+</div>
 </div>
 
 <script>
 document.getElementById("resumeForm").addEventListener("submit", async function(e){
     e.preventDefault();
     let fileInput = document.getElementById("resume");
+    
+    if (!fileInput.files[0]) {
+        alert("Please select a file first!");
+        return;
+    }
+    
     let formData = new FormData();
     formData.append("resume", fileInput.files[0]);
 
     let response = await fetch("/match", { method: "POST", body: formData });
-    if (!response.ok) { console.error("Server error"); return; }
+    if (!response.ok) { 
+        console.error("Server error"); 
+        alert("Error processing resume");
+        return; 
+    }
 
     let jobs = await response.json();
     let tableBody = document.querySelector("#jobsTable tbody");
     tableBody.innerHTML = "";
 
+    if (jobs.length === 0) {
+        tableBody.innerHTML = "<tr><td colspan='5' style='text-align:center; padding: 30px;'>No matching jobs found</td></tr>";
+        return;
+    }
+
     jobs.forEach(job => {
         let row = document.createElement("tr");
+        
+        // Add row highlighting based on match score
+        if (job.match_score >= 70) {
+            row.classList.add('high-match-row');
+        } else if (job.match_score >= 40) {
+            row.classList.add('medium-match-row');
+        } else if (job.match_score > 0) {
+            row.classList.add('low-match-row');
+        }
+        
+        // Format matching skills display
+        let matchingSkillsDisplay = job.matching_skills && job.matching_skills !== "None" 
+            ? `<span class="skill-match">✓ ${job.matching_skills}</span>` 
+            : `<span class="no-match">No skills matched</span>`;
+        
+        // Format job skills
+        let jobSkillsDisplay = job.skills ? 
+            `<span class="skills-required">${job.skills}</span>` : 
+            '<span class="no-match">No skills listed</span>';
+        
         row.innerHTML = `
-            <td>${job.title}</td>
-            <td>${job.skills}</td>
-            <td>${job.location}</td>
+            <td><span class="job-title">${job.title}</span></td>
+            <td>${jobSkillsDisplay}</td>
+            <td>${matchingSkillsDisplay}</td>
+            <td><span class="location-badge">📍 ${job.location}</span></td>
             <td>
                 <div class="progress">
                     <div class="progress-bar" style="width:${job.match_score}%">
-                        ${job.match_score.toFixed(2)}%
+                        ${job.match_score}%
                     </div>
                 </div>
             </td>

@@ -1,9 +1,6 @@
 from flask import Flask, request, jsonify, render_template
 import pandas as pd
 from flask_cors import CORS
-from sklearn.feature_extraction.text import TfidfVectorizer
-from sklearn.metrics.pairwise import cosine_similarity
-import numpy as np
 import re
 
 app = Flask(__name__)
@@ -24,52 +21,155 @@ def match_jobs():
     file = request.files['resume']
     resume_text = file.read().decode("utf-8", errors="ignore").lower()
     
-    # Extract keywords from resume (simple word extraction)
-    resume_words = set(re.findall(r'\w+', resume_text))
+    # Extract ALL skills from resume more intelligently
+    resume_skills = set()
+    
+    # Look for specific skills mentioned in the CV
+    skill_patterns = {
+        'python': r'python',
+        'c++': r'c\+\+',
+        'sql': r'sql',
+        'java': r'java',
+        'javascript': r'javascript',
+        'machine learning': r'machine learning|ml',
+        'nlp': r'nlp|natural language',
+        'tensorflow': r'tensorflow',
+        'flask': r'flask',
+        'streamlit': r'streamlit',
+        'numpy': r'numpy',
+        'pandas': r'pandas',
+        'scikit-learn': r'scikit-learn|sklearn',
+        'data preprocessing': r'data preprocessing|preprocessing',
+        'classification': r'classification',
+        'clustering': r'clustering',
+        'regression': r'regression',
+        'data structures': r'data structures|dsa',
+        'algorithms': r'algorithms',
+        'oop': r'oop|object oriented',
+        'dbms': r'dbms|database',
+        'git': r'git',
+        'github': r'github',
+        'jupyter': r'jupyter',
+        'mysql': r'mysql',
+        'sqlite': r'sqlite',
+        'assembly': r'assembly',
+        'document parsing': r'document parsing|parsing',
+        'retrieval': r'retrieval|rag',
+        'model development': r'model development|model building',
+        'feature engineering': r'feature engineering',
+        'supervised learning': r'supervised learning',
+        # Add more as needed
+    }
+    
+    # Check each pattern
+    for skill, pattern in skill_patterns.items():
+        if re.search(pattern, resume_text, re.IGNORECASE):
+            resume_skills.add(skill)
+    
+    # Also extract individual words that might be skills
+    words = re.findall(r'\b[a-zA-Z0-9\+]{2,}\b', resume_text)
+    common_tech = ['python', 'c++', 'sql', 'java', 'javascript', 'html', 'css', 
+                   'react', 'node', 'mongodb', 'aws', 'docker', 'kubernetes',
+                   'tensorflow', 'pytorch', 'scikit', 'pandas', 'numpy', 'flask',
+                   'django', 'git', 'github', 'mysql', 'postgresql', 'mongodb',
+                   'excel', 'tableau', 'powerbi', 'machine learning', 'deep learning',
+                   'nlp', 'computer vision', 'data science', 'analytics']
+    
+    for word in words:
+        if word in common_tech:
+            resume_skills.add(word)
+    
+    print(f"Found skills in resume: {resume_skills}")  # Debug print
     
     results = []
     
     for i, job in jobs.iterrows():
-        # Get job skills and convert to string
-        skills = str(job['skills']).lower()
-        title = str(job['title']).lower()
-        location = str(job['location']).lower()
+        # Get job skills
+        job_skills_text = str(job['skills']).lower()
         
-        # Split skills into words
-        skill_words = set(re.findall(r'\w+', skills))
+        # Parse job skills (handle commas, spaces, etc.)
+        job_skills_list = []
+        if ',' in job_skills_text:
+            # Split by comma
+            for skill in job_skills_text.split(','):
+                skill = skill.strip()
+                if skill:
+                    job_skills_list.append(skill)
+        else:
+            # If no commas, try to split by spaces or keep as one
+            if job_skills_text and job_skills_text != 'nan':
+                job_skills_list = [job_skills_text]
         
-        # Calculate match based on common words
-        common_words = resume_words.intersection(skill_words)
+        # Clean up skills
+        cleaned_job_skills = []
+        for skill in job_skills_list:
+            # Remove extra spaces
+            skill = ' '.join(skill.split())
+            if skill and skill != 'nan':
+                cleaned_job_skills.append(skill)
         
-        if len(skill_words) > 0:
-            # Calculate percentage based on skills matched
-            match_pct = (len(common_words) / len(skill_words)) * 100
+        # Find matching skills
+        matching_skills = []
+        for job_skill in cleaned_job_skills:
+            # Direct match
+            if job_skill in resume_skills:
+                matching_skills.append(job_skill)
+            else:
+                # Check partial matches (e.g., "Machine Learning" matches "ML")
+                for resume_skill in resume_skills:
+                    # If job skill is contained in resume skill or vice versa
+                    if (job_skill in resume_skill or resume_skill in job_skill):
+                        # Avoid too generic matches
+                        if len(job_skill) > 2 and len(resume_skill) > 2:
+                            matching_skills.append(job_skill)
+                            break
+                    # Handle abbreviations (ML <-> Machine Learning)
+                    elif (job_skill == 'ml' and 'machine learning' in resume_skills) or \
+                         (job_skill == 'ai' and 'artificial intelligence' in resume_skills) or \
+                         (job_skill == 'nlp' and 'natural language' in resume_skills):
+                        matching_skills.append(job_skill)
+                        break
+        
+        # Remove duplicates
+        matching_skills = list(set(matching_skills))
+        
+        # Calculate match percentage
+        if len(cleaned_job_skills) > 0:
+            match_pct = (len(matching_skills) / len(cleaned_job_skills)) * 100
         else:
             match_pct = 0
         
-        # Add some random variation to make it interesting
-        # This ensures you see different percentages
-        import random
-        random_factor = random.uniform(0.8, 1.2)
-        match_pct = match_pct * random_factor
+        # Boost if job title contains relevant keywords
+        job_title = str(job['title']).lower()
+        title_keywords = ['data', 'software', 'developer', 'engineer', 'programmer', 
+                         'machine learning', 'ai', 'ml', 'python', 'c++', 'sql', 
+                         'database', 'analyst', 'scientist']
         
-        # Ensure minimum 5% and maximum 98%
-        match_pct = max(5, min(98, match_pct))
+        for keyword in title_keywords:
+            if keyword in job_title:
+                if any(skill in resume_skills for skill in ['python', 'c++', 'sql', 'java', 'programming']):
+                    match_pct += 5  # Bonus for title relevance
+        
+        # Cap at 100%
+        match_pct = min(100, match_pct)
         
         # Round to 1 decimal
         match_pct = round(match_pct, 1)
         
+        # Store job with its match info
         results.append({
             "title": job["title"],
             "skills": job["skills"],
             "location": job["location"],
-            "match_score": match_pct
+            "match_score": match_pct,
+            "matching_skills": ", ".join(matching_skills) if matching_skills else "None"
         })
-
-    # Sort descending by match
+    
+    # Sort by match percentage (highest first)
     results = sorted(results, key=lambda x: x["match_score"], reverse=True)
-
-    return jsonify(results[:10])
+    
+    # Return top 20 instead of 10 to see more relevant jobs
+    return jsonify(results[:20])
 
 if __name__ == "__main__":
     app.run(debug=True)
