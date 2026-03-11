@@ -1,74 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <title>NexHire - Resume Upload</title>
-  <style>
-    body { font-family: Arial, sans-serif; margin: 30px; }
-    input, button { padding: 10px; margin: 5px 0; }
-    table { border-collapse: collapse; width: 100%; margin-top: 20px; }
-    th, td { border: 1px solid #ccc; padding: 10px; text-align: left; }
-    th { background-color: #f2f2f2; }
-  </style>
+<meta charset="UTF-8">
+<title>NexHire AI Job Matcher</title>
+<style>
+body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg,#32383e,#7e8f90);
+    min-height: 100vh;
+}
+
+.container {
+    width: 90%;
+    max-width: 900px;
+    margin: auto;
+    margin-top: 40px;
+    background: rgb(170, 165, 165);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+h1 { text-align: center; color: #4a3e12; }
+
+.upload-box { text-align: center; margin-bottom: 30px; }
+
+button {
+    background: #94948b;
+    color: rgb(35, 23, 36);
+    border: none;
+    padding: 12px 25px;
+    font-size: 16px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+button:hover { background: #6c4242; }
+
+table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+th { background: #706f62; color: rgb(3, 18, 12); padding: 12px; }
+td { padding: 10px; border-bottom: 1px solid #654545; }
+tr:hover { background: #6c4242; }
+
+.progress {
+    background: #ffffff;  /* white background */
+    border-radius: 10px;
+    overflow: hidden;
+    height: 25px;
+}
+
+.progress-bar {
+    height: 25px;
+    background: #7f6161;  /* maroon bar */
+    display: flex;
+    justify-content: center; /* center horizontally */
+    align-items: center;     /* center vertically */
+    color: #000000;          /* black text */
+    font-weight: bold;
+}
+</style>
 </head>
+
 <body>
-  <h1>NexHire - Upload Your Resume</h1>
 
-  <form id="resumeForm">
-    <input type="file" id="resume" name="resume" required>
-    <button type="submit">Upload & Get Top Jobs</button>
-  </form>
+<div class="container">
+<h1>NexHire AI Job Matcher</h1>
 
-  <h2>Top Recommended Jobs:</h2>
-  <table id="jobsTable">
-    <thead>
-      <tr>
-        <th>Title</th>
-        <th>Skills</th>
-        <th>Location</th>
-        <th>Match Score (%)</th>
-      </tr>
-    </thead>
-    <tbody></tbody>
-  </table>
+<div class="upload-box">
+<form id="resumeForm">
+<input type="file" id="resume" required><br><br>
+<button type="submit">Find Matching Jobs</button>
+</form>
+</div>
 
-  <script>
-    const form = document.getElementById('resumeForm');
-    const jobsTableBody = document.querySelector('#jobsTable tbody');
+<h2>Top Recommended Jobs</h2>
+<table id="jobsTable">
+<thead>
+<tr>
+<th>Job Title</th>
+<th>Skills Required</th>
+<th>Location</th>
+<th>Match Score</th>
+</tr>
+</thead>
+<tbody></tbody>
+</table>
+</div>
 
-    form.addEventListener('submit', async (e) => {
-      e.preventDefault();
-      const fileInput = document.getElementById('resume');
-      if (fileInput.files.length === 0) return alert('Please select a file.');
+<script>
+document.getElementById("resumeForm").addEventListener("submit", async function(e){
+    e.preventDefault();
+    let fileInput = document.getElementById("resume");
+    let formData = new FormData();
+    formData.append("resume", fileInput.files[0]);
 
-      const formData = new FormData();
-      formData.append('resume', fileInput.files[0]);
+    let response = await fetch("/match", { method: "POST", body: formData });
+    if (!response.ok) { console.error("Server error"); return; }
 
-      // Send file to backend
-      const response = await fetch('/upload_resume', {
-        method: 'POST',
-        body: formData
-      });
+    let jobs = await response.json();
+    let tableBody = document.querySelector("#jobsTable tbody");
+    tableBody.innerHTML = "";
 
-      if (!response.ok) return alert('Upload failed.');
-
-      const jobs = await response.json();
-
-      // Clear previous table rows
-      jobsTableBody.innerHTML = '';
-
-      // Populate table
-      jobs.forEach(job => {
-        const row = document.createElement('tr');
+    jobs.forEach(job => {
+        let row = document.createElement("tr");
         row.innerHTML = `
-          <td>${job.title}</td>
-          <td>${job.skills}</td>
-          <td>${job.location}</td>
-          <td>${job.match_score}</td>
+            <td>${job.title}</td>
+            <td>${job.skills}</td>
+            <td>${job.location}</td>
+            <td>
+                <div class="progress">
+                    <div class="progress-bar" style="width:${job.match_score}%">
+                        ${job.match_score.toFixed(2)}%
+                    </div>
+                </div>
+            </td>
         `;
-        jobsTableBody.appendChild(row);
-      });
+        tableBody.appendChild(row);
     });
-  </script>
+});
+</script>
+
 </body>
 </html>
