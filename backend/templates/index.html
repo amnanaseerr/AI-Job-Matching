@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>NexHire - Resume Upload</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 30px; }
+    input, button { padding: 10px; margin: 5px 0; }
+    table { border-collapse: collapse; width: 100%; margin-top: 20px; }
+    th, td { border: 1px solid #ccc; padding: 10px; text-align: left; }
+    th { background-color: #f2f2f2; }
+  </style>
+</head>
+<body>
+  <h1>NexHire - Upload Your Resume</h1>
+
+  <form id="resumeForm">
+    <input type="file" id="resume" name="resume" required>
+    <button type="submit">Upload & Get Top Jobs</button>
+  </form>
+
+  <h2>Top Recommended Jobs:</h2>
+  <table id="jobsTable">
+    <thead>
+      <tr>
+        <th>Title</th>
+        <th>Skills</th>
+        <th>Location</th>
+        <th>Match Score (%)</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+
+  <script>
+    const form = document.getElementById('resumeForm');
+    const jobsTableBody = document.querySelector('#jobsTable tbody');
+
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const fileInput = document.getElementById('resume');
+      if (fileInput.files.length === 0) return alert('Please select a file.');
+
+      const formData = new FormData();
+      formData.append('resume', fileInput.files[0]);
+
+      // Send file to backend
+      const response = await fetch('/upload_resume', {
+        method: 'POST',
+        body: formData
+      });
+
+      if (!response.ok) return alert('Upload failed.');
+
+      const jobs = await response.json();
+
+      // Clear previous table rows
+      jobsTableBody.innerHTML = '';
+
+      // Populate table
+      jobs.forEach(job => {
+        const row = document.createElement('tr');
+        row.innerHTML = `
+          <td>${job.title}</td>
+          <td>${job.skills}</td>
+          <td>${job.location}</td>
+          <td>${job.match_score}</td>
+        `;
+        jobsTableBody.appendChild(row);
+      });
+    });
+  </script>
+</body>
+</html>

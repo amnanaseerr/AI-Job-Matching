@@ -1,0 +1,501 @@
+id,title,location,skills
+1,Early years teacher,Sydney,Pharmaceuticals
+2,Counselling psychologist,San Francisco,"Google Ads, SEO, Content Writing"
+3,Radio broadcast assistant,New York,"Patient Care, Nursing, Medical Research, Pharmaceuticals"
+4,"Designer, exhibition/display",Berlin,Machine Learning
+5,"Psychotherapist, dance movement",Sydney,"Nursing, Medical Research, Pharmaceuticals"
+6,Early years teacher,Sydney,"Financial Modeling, Risk Analysis"
+7,Academic librarian,London,Pharmaceuticals
+8,Quantity surveyor,Sydney,"Java, Python"
+9,Archaeologist,New York,"Python, SQL, Risk Analysis"
+10,Mining engineer,London,Production Planning
+11,"Education officer, environmental",Berlin,"Risk Analysis, SQL, Financial Modeling"
+12,Brewing technologist,Sydney,"Financial Modeling, SQL, Excel, Python"
+13,Newspaper journalist,Berlin,"Social Media, Content Writing, SEO"
+14,Chief Technology Officer,San Francisco,"Sales, Merchandising, Customer Service"
+15,Accommodation manager,London,"Supply Chain, Quality Control, Production Planning"
+16,Management consultant,Bangalore,"Quality Control, Production Planning"
+17,Animator,New York,Excel
+18,Fitness centre manager,Bangalore,"Java, Python, C++"
+19,Games developer,Bangalore,Risk Analysis
+20,Race relations officer,Sydney,"SQL, Excel, Python"
+21,Armed forces operational officer,Sydney,"Curriculum Design, EdTech, Research"
+22,Commissioning editor,Sydney,"Google Ads, Social Media, Content Writing, SEO"
+23,Adult guidance worker,Toronto,"Supply Chain, Quality Control"
+24,Contractor,Toronto,Merchandising
+25,"Radiographer, therapeutic",San Francisco,Machine Learning
+26,IT technical support officer,Bangalore,Research
+27,Soil scientist,Berlin,"Risk Analysis, SQL"
+28,Museum/gallery curator,Toronto,"SEO, Social Media, Market Research"
+29,"Programmer, multimedia",San Francisco,"Google Ads, SEO"
+30,Futures trader,San Francisco,"Quality Control, Supply Chain"
+31,"Designer, furniture",Sydney,"Customer Service, Sales, Merchandising"
+32,"Accountant, chartered management",London,"Quality Control, Production Planning, Supply Chain"
+33,Site engineer,New York,"Excel, Risk Analysis, Python, Financial Modeling"
+34,"Programmer, multimedia",San Francisco,"Customer Service, Merchandising"
+35,Orthoptist,Bangalore,"SEO, Google Ads"
+36,Museum/gallery curator,London,"Merchandising, Sales, Customer Service"
+37,"Therapist, nutritional",San Francisco,EdTech
+38,"Therapist, nutritional",London,Machine Learning
+39,Cartographer,London,"Quality Control, Production Planning, Supply Chain"
+40,Education administrator,San Francisco,"Excel, Python, SQL"
+41,Writer,San Francisco,"Google Ads, Content Writing"
+42,Dealer,Bangalore,"Customer Service, Sales, Merchandising"
+43,"Psychologist, forensic",Sydney,Supply Chain
+44,Clinical research associate,Toronto,"Customer Service, Sales, Merchandising"
+45,Product manager,Bangalore,"SQL, C++"
+46,"Doctor, hospital",Toronto,"Python, SQL"
+47,Chief Executive Officer,Toronto,"Google Ads, Social Media, Market Research, SEO"
+48,Insurance broker,Toronto,"Supply Chain, Quality Control"
+49,Clinical molecular geneticist,Sydney,"Supply Chain, Production Planning, Quality Control"
+50,Sales promotion account executive,San Francisco,Pharmaceuticals
+51,Therapeutic radiographer,Toronto,"Supply Chain, Quality Control"
+52,"Programmer, applications",London,"Quality Control, Production Planning"
+53,"Buyer, retail",Sydney,Customer Service
+54,"Designer, jewellery",Bangalore,"Python, Financial Modeling, Risk Analysis, SQL"
+55,Facilities manager,Toronto,Pharmaceuticals
+56,Sports coach,Berlin,"SQL, Risk Analysis, Financial Modeling, Excel"
+57,Higher education careers adviser,London,Research
+58,Chartered public finance accountant,London,Medical Research
+59,"Programme researcher, broadcasting/film/video",Toronto,"Supply Chain, Quality Control"
+60,English as a second language teacher,New York,"EdTech, Teaching, Research"
+61,Warehouse manager,San Francisco,Sales
+62,Quantity surveyor,Bangalore,"Medical Research, Nursing, Pharmaceuticals"
+63,Manufacturing systems engineer,Bangalore,"SQL, Python, Financial Modeling"
+64,Race relations officer,Bangalore,"C++, Java, AWS"
+65,Electronics engineer,Sydney,"Medical Research, Pharmaceuticals, Patient Care"
+66,"Nurse, mental health",Berlin,Python
+67,"Accountant, chartered",Bangalore,SEO
+68,Patent examiner,San Francisco,"Pharmaceuticals, Nursing, Medical Research, Patient Care"
+69,Copy,Berlin,"Teaching, Curriculum Design"
+70,"Engineer, chemical",San Francisco,Merchandising
+71,Financial planner,New York,"Medical Research, Pharmaceuticals, Patient Care"
+72,"Engineer, civil (consulting)",New York,"Quality Control, Supply Chain, Production Planning"
+73,"Investment banker, corporate",Toronto,"Content Writing, SEO, Market Research, Google Ads"
+74,Charity fundraiser,London,"SQL, Python, Excel, Risk Analysis"
+75,"Editor, film/video",London,Curriculum Design
+76,Exhibition designer,Sydney,"Risk Analysis, Python"
+77,"Accountant, chartered management",Bangalore,"Nursing, Medical Research, Patient Care"
+78,Human resources officer,London,"Excel, Risk Analysis"
+79,Academic librarian,Toronto,Merchandising
+80,Leisure centre manager,Bangalore,"SEO, Social Media"
+81,"Research officer, political party",Bangalore,"EdTech, Curriculum Design, Teaching"
+82,"Psychologist, sport and exercise",Berlin,"Market Research, Social Media"
+83,Further education lecturer,Toronto,"Medical Research, Pharmaceuticals"
+84,"Optician, dispensing",Berlin,Supply Chain
+85,"Investment banker, operational",Bangalore,SEO
+86,Patent attorney,Toronto,"Quality Control, Production Planning, Supply Chain"
+87,Dispensing optician,Berlin,"Research, EdTech, Curriculum Design"
+88,Psychiatric nurse,San Francisco,"Merchandising, Sales"
+89,Clinical molecular geneticist,San Francisco,"Sales, Customer Service, Merchandising"
+90,Charity fundraiser,New York,"Python, SQL, Java"
+91,Race relations officer,San Francisco,"Market Research, Google Ads"
+92,Advice worker,Toronto,Sales
+93,Learning mentor,London,"Sales, Merchandising"
+94,"Geologist, wellsite",Bangalore,"Machine Learning, Python, Java"
+95,Senior tax professional/tax inspector,Toronto,"Merchandising, Customer Service, Sales"
+96,Heritage manager,Bangalore,"Python, Java, Machine Learning, React"
+97,Operations geologist,Bangalore,"Production Planning, Quality Control, Supply Chain"
+98,"Psychologist, prison and probation services",Berlin,"Python, SQL, Risk Analysis, Financial Modeling"
+99,Chartered accountant,San Francisco,"Patient Care, Pharmaceuticals, Medical Research"
+100,Architectural technologist,Toronto,"Supply Chain, Production Planning, Quality Control"
+101,Financial risk analyst,Berlin,Market Research
+102,Nutritional therapist,Sydney,"Excel, Risk Analysis, Python, Financial Modeling"
+103,Paediatric nurse,London,Quality Control
+104,Quantity surveyor,Sydney,Curriculum Design
+105,"Teacher, secondary school",London,Merchandising
+106,Trading standards officer,Toronto,"Risk Analysis, Financial Modeling, Python"
+107,Commissioning editor,New York,React
+108,Public house manager,Bangalore,"Patient Care, Medical Research, Nursing, Pharmaceuticals"
+109,Public affairs consultant,Sydney,"Content Writing, Google Ads"
+110,Exhibition designer,London,Teaching
+111,Plant breeder/geneticist,San Francisco,Machine Learning
+112,Agricultural engineer,Toronto,"Sales, Merchandising"
+113,Museum education officer,Sydney,"Google Ads, Content Writing, SEO"
+114,Estate agent,Berlin,"Production Planning, Supply Chain, Quality Control"
+115,Marketing executive,Toronto,Teaching
+116,Patent examiner,Bangalore,"Risk Analysis, SQL"
+117,Sports development officer,Sydney,"Production Planning, Supply Chain"
+118,Stage manager,London,Machine Learning
+119,"Designer, blown glass/stained glass",Bangalore,"Market Research, SEO, Google Ads"
+120,Tax inspector,New York,"Teaching, Curriculum Design, Research"
+121,Building services engineer,San Francisco,"Nursing, Pharmaceuticals, Patient Care"
+122,Best boy,Berlin,"Content Writing, SEO, Market Research"
+123,"Designer, exhibition/display",Sydney,"Quality Control, Supply Chain"
+124,Quarry manager,San Francisco,"Risk Analysis, SQL"
+125,Ecologist,Toronto,Risk Analysis
+126,"Designer, industrial/product",Bangalore,Pharmaceuticals
+127,Science writer,San Francisco,"Medical Research, Patient Care, Nursing"
+128,Horticultural consultant,San Francisco,Supply Chain
+129,Chartered legal executive (England and Wales),San Francisco,"Teaching, EdTech, Research, Curriculum Design"
+130,Solicitor,Sydney,Customer Service
+131,Public relations officer,Berlin,"Merchandising, Sales"
+132,"Horticulturist, commercial",San Francisco,Curriculum Design
+133,"Psychologist, educational",Toronto,Customer Service
+134,Forest/woodland manager,London,"EdTech, Research, Teaching, Curriculum Design"
+135,"Scientist, research (life sciences)",Toronto,"Nursing, Patient Care, Medical Research, Pharmaceuticals"
+136,"Engineer, drilling",Sydney,"Market Research, SEO"
+137,Materials engineer,Bangalore,"Research, Teaching, Curriculum Design"
+138,"Therapist, occupational",Sydney,Nursing
+139,Radio broadcast assistant,Bangalore,"Machine Learning, SQL"
+140,Personal assistant,Bangalore,EdTech
+141,Call centre manager,Bangalore,Python
+142,Chief Strategy Officer,San Francisco,"Java, C++, SQL"
+143,Equality and diversity officer,Sydney,"Customer Service, Sales"
+144,Lexicographer,Sydney,Pharmaceuticals
+145,Teaching laboratory technician,Bangalore,Teaching
+146,Special effects artist,Toronto,"Curriculum Design, Research, Teaching"
+147,Music therapist,Toronto,"Merchandising, Sales, Customer Service"
+148,Youth worker,London,"Patient Care, Medical Research, Pharmaceuticals, Nursing"
+149,Theatre stage manager,Toronto,"Market Research, SEO, Content Writing, Social Media"
+150,Illustrator,Sydney,"Production Planning, Quality Control"
+151,Public affairs consultant,Bangalore,"AWS, SQL, C++, React"
+152,"Scientist, clinical (histocompatibility and immunogenetics)",Sydney,"Nursing, Patient Care, Medical Research, Pharmaceuticals"
+153,"Conservator, museum/gallery",Berlin,"Quality Control, Production Planning, Supply Chain"
+154,"Designer, interior/spatial",San Francisco,Financial Modeling
+155,Occupational therapist,London,SQL
+156,"Development worker, community",Bangalore,"Pharmaceuticals, Medical Research"
+157,Garment/textile technologist,New York,"Curriculum Design, Research, EdTech, Teaching"
+158,Hospital doctor,New York,"Python, Risk Analysis, Financial Modeling, Excel"
+159,Historic buildings inspector/conservation officer,New York,"Merchandising, Sales, Customer Service"
+160,Production manager,Sydney,"Social Media, Content Writing, SEO"
+161,Proofreader,Bangalore,"Quality Control, Supply Chain, Production Planning"
+162,"Engineer, agricultural",London,Machine Learning
+163,Purchasing manager,Sydney,Customer Service
+164,Ergonomist,Sydney,"Production Planning, Quality Control, Supply Chain"
+165,Freight forwarder,New York,"Pharmaceuticals, Nursing"
+166,Waste management officer,San Francisco,"Medical Research, Nursing, Pharmaceuticals, Patient Care"
+167,Restaurant manager,London,"Java, SQL"
+168,Musician,Toronto,"Quality Control, Supply Chain, Production Planning"
+169,Technical author,San Francisco,"Production Planning, Supply Chain, Quality Control"
+170,"Engineer, manufacturing systems",Bangalore,"Medical Research, Patient Care, Pharmaceuticals"
+171,"Engineer, structural",San Francisco,"SQL, Excel, Risk Analysis"
+172,"Research officer, government",Sydney,"Production Planning, Quality Control"
+173,Television production assistant,Sydney,"Supply Chain, Production Planning"
+174,"Surveyor, hydrographic",Berlin,EdTech
+175,Geoscientist,New York,"SEO, Market Research, Content Writing"
+176,Travel agency manager,New York,"Teaching, Research, EdTech, Curriculum Design"
+177,Food technologist,London,Java
+178,Patent attorney,London,EdTech
+179,"Pharmacist, hospital",San Francisco,"Medical Research, Pharmaceuticals, Nursing, Patient Care"
+180,Copy,Toronto,"Excel, Financial Modeling, SQL, Risk Analysis"
+181,Control and instrumentation engineer,Berlin,"Patient Care, Nursing"
+182,Tax adviser,San Francisco,"SEO, Market Research"
+183,"Engineer, mining",Toronto,"Risk Analysis, Financial Modeling, Excel"
+184,Chiropodist,Berlin,"Curriculum Design, Research, Teaching"
+185,Ophthalmologist,Sydney,"Social Media, SEO, Google Ads"
+186,Theatre director,Berlin,"AWS, SQL"
+187,Copy,Berlin,"Patient Care, Pharmaceuticals, Nursing, Medical Research"
+188,"Engineer, structural",Toronto,"Supply Chain, Production Planning, Quality Control"
+189,Education administrator,London,"Nursing, Patient Care, Medical Research, Pharmaceuticals"
+190,"Surveyor, building",Berlin,Pharmaceuticals
+191,Dietitian,London,"Risk Analysis, Financial Modeling, Python, Excel"
+192,Ophthalmologist,San Francisco,"Python, Risk Analysis, SQL, Excel"
+193,Wellsite geologist,Sydney,"Risk Analysis, Financial Modeling, SQL"
+194,Trade union research officer,London,"Customer Service, Merchandising"
+195,"Scientist, research (medical)",Bangalore,"Risk Analysis, SQL, Python"
+196,Nutritional therapist,San Francisco,"SEO, Google Ads, Market Research"
+197,"Producer, television/film/video",Bangalore,"Pharmaceuticals, Medical Research, Nursing"
+198,Psychiatrist,London,"SQL, Python, Financial Modeling"
+199,"Producer, television/film/video",Sydney,"Pharmaceuticals, Patient Care"
+200,Interior and spatial designer,Berlin,"Python, Risk Analysis"
+201,Speech and language therapist,Toronto,"Pharmaceuticals, Nursing, Medical Research, Patient Care"
+202,Merchant navy officer,Sydney,"SQL, Excel, Risk Analysis, Python"
+203,Futures trader,New York,"SQL, Excel, Financial Modeling"
+204,"Therapist, horticultural",San Francisco,Research
+205,Corporate investment banker,San Francisco,"Python, Risk Analysis, Financial Modeling, SQL"
+206,"Conservation officer, historic buildings",Berlin,Teaching
+207,Private music teacher,London,Machine Learning
+208,Writer,Sydney,"Production Planning, Supply Chain"
+209,"Psychologist, sport and exercise",New York,"Market Research, Google Ads"
+210,"Psychologist, clinical",New York,Supply Chain
+211,Accounting technician,Toronto,"SQL, Risk Analysis, Excel, Python"
+212,"Surveyor, rural practice",San Francisco,"Python, Excel"
+213,Chief Operating Officer,San Francisco,"Supply Chain, Quality Control, Production Planning"
+214,"Engineer, site",Bangalore,"Python, SQL, Excel"
+215,"Engineer, aeronautical",New York,"SQL, Java, Python, C++"
+216,Orthoptist,Sydney,Google Ads
+217,Town planner,New York,Google Ads
+218,Media buyer,San Francisco,"Merchandising, Sales, Customer Service"
+219,Interior and spatial designer,London,"EdTech, Curriculum Design, Teaching"
+220,Freight forwarder,Berlin,"Research, Curriculum Design, EdTech"
+221,Intelligence analyst,Toronto,AWS
+222,Osteopath,Sydney,Sales
+223,Sports coach,San Francisco,"Excel, Financial Modeling"
+224,"Clinical scientist, histocompatibility and immunogenetics",Bangalore,"Python, Risk Analysis, Financial Modeling, Excel"
+225,Civil Service fast streamer,London,"SQL, Python"
+226,Chiropractor,London,"Python, React, AWS"
+227,Haematologist,Berlin,"Patient Care, Pharmaceuticals, Nursing"
+228,"Surveyor, quantity",Bangalore,Teaching
+229,Control and instrumentation engineer,San Francisco,"Patient Care, Nursing"
+230,Dealer,Toronto,Risk Analysis
+231,Banker,San Francisco,"Supply Chain, Production Planning, Quality Control"
+232,Housing manager/officer,Bangalore,"Python, SQL, Risk Analysis, Financial Modeling"
+233,Writer,San Francisco,Nursing
+234,"Merchandiser, retail",Berlin,"SQL, Excel, Python, Financial Modeling"
+235,Production manager,Bangalore,"Patient Care, Nursing, Pharmaceuticals"
+236,Phytotherapist,Bangalore,Supply Chain
+237,Farm manager,San Francisco,Google Ads
+238,Contracting civil engineer,Toronto,Financial Modeling
+239,"Engineer, chemical",London,"Research, EdTech, Teaching"
+240,Holiday representative,London,"SEO, Market Research, Content Writing, Social Media"
+241,Probation officer,Sydney,Pharmaceuticals
+242,"Surveyor, planning and development",London,"React, SQL, Machine Learning, Python"
+243,Arts administrator,New York,"Production Planning, Supply Chain"
+244,Sports therapist,New York,"SQL, React, Machine Learning"
+245,"Designer, industrial/product",London,"Curriculum Design, Teaching, EdTech"
+246,"Biochemist, clinical",Bangalore,"Python, Risk Analysis, SQL"
+247,Paediatric nurse,Toronto,"Content Writing, Google Ads"
+248,Automotive engineer,Berlin,SEO
+249,"Investment banker, corporate",Bangalore,Sales
+250,Chief Strategy Officer,Bangalore,Excel
+251,Sports therapist,Sydney,Financial Modeling
+252,Secondary school teacher,Bangalore,"Customer Service, Sales, Merchandising"
+253,Veterinary surgeon,Bangalore,"Risk Analysis, Python, Excel"
+254,Claims inspector/assessor,Berlin,Risk Analysis
+255,Computer games developer,Toronto,Quality Control
+256,Risk analyst,Berlin,"Machine Learning, Java"
+257,Computer games developer,Toronto,Medical Research
+258,Hospital doctor,Bangalore,"Quality Control, Production Planning, Supply Chain"
+259,Public affairs consultant,New York,"C++, Machine Learning"
+260,Learning disability nurse,Toronto,Sales
+261,Environmental education officer,Berlin,"Nursing, Pharmaceuticals"
+262,Copy,Sydney,Production Planning
+263,Catering manager,Sydney,React
+264,Medical physicist,New York,"Sales, Merchandising"
+265,"Engineer, electrical",London,"SQL, Financial Modeling, Python, Risk Analysis"
+266,Systems developer,Berlin,"Python, Java, Machine Learning"
+267,"Surveyor, commercial/residential",Bangalore,Supply Chain
+268,"Psychologist, clinical",Toronto,Medical Research
+269,Publishing copy,Toronto,"Python, Financial Modeling"
+270,Dance movement psychotherapist,Sydney,"Social Media, Content Writing, SEO, Market Research"
+271,"Programmer, applications",Bangalore,"Supply Chain, Quality Control, Production Planning"
+272,Maintenance engineer,London,"Merchandising, Sales, Customer Service"
+273,Historic buildings inspector/conservation officer,Toronto,"Sales, Customer Service, Merchandising"
+274,Immunologist,Berlin,"Quality Control, Supply Chain"
+275,Fitness centre manager,Bangalore,"C++, SQL, Java, Python"
+276,Clinical molecular geneticist,London,"Curriculum Design, Teaching"
+277,Mudlogger,London,"SQL, Excel"
+278,Heritage manager,Sydney,"SEO, Google Ads, Social Media, Market Research"
+279,Armed forces operational officer,Sydney,"Content Writing, SEO, Market Research"
+280,Public relations account executive,Sydney,"SQL, AWS, Java"
+281,Personnel officer,New York,"Risk Analysis, Financial Modeling, Python, SQL"
+282,"Copywriter, advertising",Berlin,"AWS, Python, SQL"
+283,Theme park manager,New York,Python
+284,"Scientist, physiological",Bangalore,"Nursing, Medical Research"
+285,Water quality scientist,London,Excel
+286,Diagnostic radiographer,Berlin,"AWS, Python, Java, SQL"
+287,Paediatric nurse,Sydney,"Patient Care, Pharmaceuticals"
+288,Systems analyst,Toronto,Python
+289,Politician's assistant,Sydney,"EdTech, Curriculum Design, Teaching, Research"
+290,Publishing copy,San Francisco,"Python, Risk Analysis"
+291,Farm manager,Toronto,"Content Writing, Social Media"
+292,Gaffer,Sydney,SEO
+293,Media buyer,San Francisco,"Python, Financial Modeling, Risk Analysis, SQL"
+294,Systems analyst,Bangalore,"Nursing, Medical Research, Pharmaceuticals, Patient Care"
+295,Furniture designer,London,Financial Modeling
+296,"Designer, jewellery",New York,"Curriculum Design, EdTech, Teaching, Research"
+297,Paramedic,Sydney,Financial Modeling
+298,"Runner, broadcasting/film/video",San Francisco,"C++, React, SQL, Python"
+299,Local government officer,Berlin,"EdTech, Teaching, Curriculum Design, Research"
+300,Financial trader,Toronto,"Teaching, Research, EdTech"
+301,Hydrogeologist,London,"Python, React, C++, AWS"
+302,Conference centre manager,Bangalore,"Java, Python, Machine Learning"
+303,Telecommunications researcher,London,Production Planning
+304,Production manager,Bangalore,"Nursing, Patient Care, Medical Research"
+305,Speech and language therapist,Bangalore,"SEO, Content Writing"
+306,Passenger transport manager,Berlin,"Google Ads, SEO, Social Media"
+307,Toxicologist,San Francisco,Curriculum Design
+308,Community pharmacist,London,"Market Research, Google Ads, Social Media, SEO"
+309,Medical laboratory scientific officer,San Francisco,"Curriculum Design, EdTech"
+310,Ranger/warden,Toronto,"Social Media, Market Research"
+311,Energy manager,Berlin,"Research, EdTech, Curriculum Design, Teaching"
+312,Local government officer,Bangalore,"Excel, Financial Modeling, SQL, Python"
+313,Secondary school teacher,Sydney,"Merchandising, Sales, Customer Service"
+314,"Engineer, manufacturing systems",Sydney,"Social Media, Google Ads, Content Writing"
+315,Music therapist,Bangalore,Customer Service
+316,Civil Service fast streamer,Sydney,"SQL, Python"
+317,"Research officer, government",Berlin,"Risk Analysis, Financial Modeling, Excel, SQL"
+318,Educational psychologist,Bangalore,C++
+319,Building surveyor,New York,"Quality Control, Supply Chain"
+320,"Engineer, electronics",Berlin,"Curriculum Design, EdTech, Research"
+321,Chartered legal executive (England and Wales),Sydney,"Google Ads, Social Media"
+322,Agricultural consultant,Bangalore,"Supply Chain, Production Planning"
+323,"Programme researcher, broadcasting/film/video",London,"Customer Service, Merchandising, Sales"
+324,"Accountant, chartered",Berlin,"Risk Analysis, Excel, Financial Modeling, Python"
+325,Barrister's clerk,San Francisco,"Python, SQL, Machine Learning, Java"
+326,Speech and language therapist,New York,"Sales, Merchandising, Customer Service"
+327,Trading standards officer,New York,"Customer Service, Merchandising"
+328,"Scientist, marine",San Francisco,"Customer Service, Sales, Merchandising"
+329,Insurance broker,Bangalore,"Machine Learning, Java"
+330,Materials engineer,London,"Java, AWS"
+331,Set designer,New York,"Risk Analysis, Financial Modeling, Python, SQL"
+332,"Horticulturist, amenity",New York,"Research, Curriculum Design"
+333,Sports administrator,London,"Medical Research, Pharmaceuticals, Patient Care, Nursing"
+334,"Pharmacist, hospital",Berlin,"Supply Chain, Quality Control"
+335,Drilling engineer,London,Machine Learning
+336,"Engineer, manufacturing systems",Bangalore,"Production Planning, Supply Chain, Quality Control"
+337,"Accountant, chartered management",Sydney,"Python, Machine Learning"
+338,"Copywriter, advertising",San Francisco,"Python, SQL, Financial Modeling, Risk Analysis"
+339,"Sales professional, IT",Toronto,"SQL, Python, Financial Modeling"
+340,Chartered legal executive (England and Wales),Sydney,Production Planning
+341,Illustrator,New York,Quality Control
+342,"Geneticist, molecular",Sydney,"Pharmaceuticals, Patient Care, Nursing, Medical Research"
+343,Secretary/administrator,Toronto,"Financial Modeling, Excel, SQL"
+344,Armed forces logistics/support/administrative officer,Sydney,"Research, Teaching"
+345,"Librarian, academic",New York,"Supply Chain, Quality Control, Production Planning"
+346,Educational psychologist,New York,"Quality Control, Supply Chain, Production Planning"
+347,"Horticulturist, amenity",New York,"EdTech, Research"
+348,Wellsite geologist,Berlin,"Sales, Merchandising, Customer Service"
+349,Biomedical engineer,Bangalore,"Python, SQL"
+350,"Doctor, hospital",Berlin,"Machine Learning, React, Java"
+351,Product manager,San Francisco,"Pharmaceuticals, Medical Research, Nursing"
+352,Fine artist,New York,"Excel, Financial Modeling, Python"
+353,Herbalist,New York,"Python, React"
+354,Quality manager,San Francisco,"Nursing, Medical Research, Patient Care"
+355,Lobbyist,New York,"Java, Machine Learning, SQL, C++"
+356,Learning disability nurse,San Francisco,Content Writing
+357,Advice worker,San Francisco,"Pharmaceuticals, Nursing"
+358,Newspaper journalist,New York,"Pharmaceuticals, Medical Research, Nursing, Patient Care"
+359,Advertising account executive,San Francisco,"Python, C++"
+360,Petroleum engineer,New York,"Research, Teaching"
+361,Print production planner,Sydney,C++
+362,"Therapist, sports",Sydney,"Financial Modeling, Python, Excel, Risk Analysis"
+363,Television floor manager,Berlin,"Customer Service, Sales, Merchandising"
+364,"Conservator, museum/gallery",London,"Merchandising, Customer Service"
+365,Clinical molecular geneticist,Berlin,"Machine Learning, Java, AWS"
+366,Newspaper journalist,London,"Financial Modeling, Python"
+367,"Secretary, company",New York,Production Planning
+368,"Education officer, environmental",San Francisco,"Curriculum Design, EdTech, Research, Teaching"
+369,Solicitor,Bangalore,"Market Research, SEO, Google Ads, Social Media"
+370,Operational researcher,San Francisco,"Content Writing, Social Media, Google Ads"
+371,"Engineer, water",London,"Financial Modeling, Excel"
+372,Chief Marketing Officer,London,"Merchandising, Customer Service"
+373,"Librarian, academic",London,"Production Planning, Supply Chain"
+374,Investment analyst,London,"SQL, AWS, C++, React"
+375,Chiropodist,Toronto,"Patient Care, Pharmaceuticals, Medical Research, Nursing"
+376,Oncologist,London,"Nursing, Medical Research, Patient Care, Pharmaceuticals"
+377,"Surveyor, building control",New York,"Production Planning, Quality Control"
+378,Travel agency manager,Sydney,"Patient Care, Pharmaceuticals, Medical Research"
+379,Pensions consultant,New York,"Content Writing, Google Ads"
+380,Soil scientist,Sydney,"EdTech, Research"
+381,"Engineer, petroleum",New York,"Production Planning, Supply Chain, Quality Control"
+382,Technical brewer,Bangalore,Excel
+383,Farm manager,London,Patient Care
+384,Merchant navy officer,Bangalore,"C++, AWS, SQL"
+385,"Surveyor, minerals",Bangalore,"Google Ads, Social Media, Market Research, SEO"
+386,Rural practice surveyor,Sydney,"EdTech, Curriculum Design, Teaching"
+387,Magazine journalist,San Francisco,"Supply Chain, Quality Control, Production Planning"
+388,Estate manager/land agent,London,"Python, Excel, Risk Analysis"
+389,Health visitor,Berlin,Research
+390,Ophthalmologist,Berlin,Pharmaceuticals
+391,"Horticulturist, commercial",New York,"AWS, Python, Java"
+392,"Geneticist, molecular",Bangalore,"Risk Analysis, SQL, Excel, Python"
+393,"Doctor, general practice",Toronto,"Financial Modeling, Risk Analysis, SQL, Excel"
+394,Arts administrator,San Francisco,SQL
+395,Agricultural engineer,Toronto,Supply Chain
+396,"Teacher, English as a foreign language",Sydney,"Risk Analysis, Excel"
+397,Commercial horticulturist,Sydney,"Research, Teaching"
+398,Diagnostic radiographer,Bangalore,"Nursing, Medical Research, Pharmaceuticals, Patient Care"
+399,"Engineer, technical sales",San Francisco,"EdTech, Research, Teaching"
+400,"Therapist, occupational",New York,"Supply Chain, Quality Control, Production Planning"
+401,Insurance risk surveyor,London,"Patient Care, Medical Research, Pharmaceuticals, Nursing"
+402,Structural engineer,San Francisco,"EdTech, Teaching"
+403,Charity officer,Toronto,"Java, React"
+404,"Lighting technician, broadcasting/film/video",Berlin,Market Research
+405,Herpetologist,Toronto,"Sales, Customer Service, Merchandising"
+406,"Administrator, arts",Sydney,"Python, SQL"
+407,Systems developer,Bangalore,"Nursing, Pharmaceuticals, Medical Research, Patient Care"
+408,Customer service manager,Bangalore,"Merchandising, Sales"
+409,"Scientist, research (physical sciences)",New York,"Sales, Customer Service, Merchandising"
+410,Hotel manager,Toronto,"SEO, Content Writing, Google Ads"
+411,Exhibition designer,London,"Merchandising, Sales, Customer Service"
+412,Operations geologist,Berlin,"Content Writing, Google Ads, Market Research, SEO"
+413,Politician's assistant,Toronto,Curriculum Design
+414,Community education officer,Berlin,"Sales, Merchandising"
+415,Photographer,Bangalore,"SQL, Python, Excel, Risk Analysis"
+416,Advertising copywriter,Toronto,"Nursing, Pharmaceuticals, Medical Research, Patient Care"
+417,"Education officer, environmental",Toronto,"Supply Chain, Production Planning"
+418,"Development worker, community",Bangalore,EdTech
+419,Conference centre manager,Bangalore,"Risk Analysis, Financial Modeling, Excel, SQL"
+420,Commissioning editor,Bangalore,"Pharmaceuticals, Nursing"
+421,"Teacher, special educational needs",London,"Financial Modeling, Python, Risk Analysis"
+422,Financial controller,Toronto,SQL
+423,Claims inspector/assessor,London,"Java, Machine Learning, C++, AWS"
+424,Clinical molecular geneticist,San Francisco,Merchandising
+425,Therapeutic radiographer,London,"Nursing, Medical Research, Pharmaceuticals"
+426,Environmental consultant,New York,"Supply Chain, Quality Control, Production Planning"
+427,Health and safety adviser,London,"EdTech, Research, Curriculum Design"
+428,"Social research officer, government",San Francisco,Production Planning
+429,IT technical support officer,San Francisco,Content Writing
+430,Structural engineer,London,"Production Planning, Quality Control, Supply Chain"
+431,Dietitian,New York,"Google Ads, Social Media"
+432,"Scientist, research (life sciences)",Bangalore,Nursing
+433,"Therapist, music",London,EdTech
+434,Health and safety inspector,Berlin,"Excel, Financial Modeling, Python"
+435,Sports administrator,Berlin,"Production Planning, Quality Control, Supply Chain"
+436,Contractor,London,"Quality Control, Supply Chain, Production Planning"
+437,Public relations account executive,Sydney,EdTech
+438,Visual merchandiser,Berlin,"Google Ads, Market Research, Social Media, SEO"
+439,Health and safety inspector,Toronto,SQL
+440,"Designer, graphic",San Francisco,"Teaching, Curriculum Design"
+441,"Engineer, maintenance",Toronto,"Quality Control, Supply Chain"
+442,Nature conservation officer,Berlin,Risk Analysis
+443,Heritage manager,Bangalore,Content Writing
+444,"Engineer, civil (consulting)",Berlin,"Teaching, Curriculum Design, Research, EdTech"
+445,Plant breeder/geneticist,Sydney,"Customer Service, Sales, Merchandising"
+446,Audiological scientist,London,"Risk Analysis, Python, Financial Modeling"
+447,"Research officer, trade union",San Francisco,"Risk Analysis, Financial Modeling"
+448,"Designer, ceramics/pottery",London,"Market Research, Social Media, Google Ads, Content Writing"
+449,Sports therapist,London,"Java, C++, React, SQL"
+450,Armed forces logistics/support/administrative officer,Berlin,"Curriculum Design, EdTech, Teaching, Research"
+451,Science writer,Berlin,Java
+452,Barrister,Berlin,Market Research
+453,Local government officer,London,Supply Chain
+454,Customer service manager,Bangalore,"Sales, Merchandising, Customer Service"
+455,Sports administrator,New York,Market Research
+456,Furniture designer,Berlin,"Production Planning, Quality Control, Supply Chain"
+457,Manufacturing engineer,Sydney,"Patient Care, Nursing, Pharmaceuticals, Medical Research"
+458,Town planner,Berlin,"Market Research, SEO"
+459,Geophysicist/field seismologist,New York,"Patient Care, Pharmaceuticals, Medical Research"
+460,"Producer, television/film/video",Bangalore,"Python, Financial Modeling"
+461,Operational investment banker,London,"Production Planning, Quality Control"
+462,"Engineer, mining",Berlin,"Content Writing, Social Media"
+463,Gaffer,Bangalore,"Sales, Merchandising, Customer Service"
+464,Orthoptist,Bangalore,"Teaching, Research, EdTech, Curriculum Design"
+465,"Therapist, sports",San Francisco,Google Ads
+466,Housing manager/officer,Toronto,"Curriculum Design, EdTech, Research, Teaching"
+467,Outdoor activities/education manager,San Francisco,"Risk Analysis, Python"
+468,Chartered certified accountant,Sydney,"Java, Machine Learning"
+469,"Librarian, public",Bangalore,"Supply Chain, Production Planning"
+470,Lexicographer,Toronto,"Risk Analysis, Financial Modeling, Excel"
+471,Counselling psychologist,San Francisco,EdTech
+472,"Designer, textile",New York,SQL
+473,"Sales professional, IT",Berlin,"Customer Service, Merchandising, Sales"
+474,Archaeologist,Berlin,"Supply Chain, Quality Control, Production Planning"
+475,Advertising account planner,Bangalore,Quality Control
+476,Herpetologist,London,"Supply Chain, Production Planning, Quality Control"
+477,Human resources officer,Bangalore,"Production Planning, Supply Chain"
+478,Systems developer,New York,Excel
+479,Therapeutic radiographer,Sydney,"Supply Chain, Quality Control, Production Planning"
+480,"Surveyor, building",London,"Teaching, Curriculum Design"
+481,"Chemist, analytical",Toronto,SQL
+482,Psychotherapist,Bangalore,"Python, Risk Analysis, Financial Modeling, Excel"
+483,Technical brewer,Berlin,"Patient Care, Medical Research, Pharmaceuticals, Nursing"
+484,Telecommunications researcher,Sydney,"Python, Risk Analysis, Excel"
+485,"Engineer, broadcasting (operations)",London,Production Planning
+486,"Engineer, biomedical",Berlin,"Patient Care, Nursing, Medical Research, Pharmaceuticals"
+487,Animal technologist,New York,"Research, Curriculum Design"
+488,"Engineer, energy",New York,Google Ads
+489,Youth worker,London,"Sales, Merchandising"
+490,Health promotion specialist,New York,"Teaching, Curriculum Design, EdTech"
+491,Printmaker,Sydney,"Supply Chain, Quality Control"
+492,Chartered legal executive (England and Wales),Berlin,"SEO, Google Ads, Market Research, Content Writing"
+493,"Embryologist, clinical",Bangalore,"Medical Research, Pharmaceuticals, Nursing"
+494,"Designer, television/film set",San Francisco,Excel
+495,Office manager,Bangalore,"Nursing, Medical Research, Patient Care"
+496,"Psychologist, clinical",San Francisco,"Python, React, Machine Learning, SQL"
+497,"Education officer, museum",Berlin,"EdTech, Research"
+498,Systems developer,Sydney,Financial Modeling
+499,Commissioning editor,London,Production Planning
+500,Hydrogeologist,London,"Merchandising, Sales"
